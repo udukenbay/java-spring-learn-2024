@@ -2,19 +2,19 @@ import java.util.*;
 
 class Calculator {
 	public static void main(String [] args) {
-		Scanner in = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Enter operand:");
-		String operand = in.nextLine();
+		String operand = sc.nextLine();
 		System.out.println("Operand = " + operand);
 
 		System.out.println("Enter integer:");
-		int i1 = in.nextInt();
+		int i1 = sc.nextInt();
 		System.out.println("First integer = " + i1);
 
 
 		System.out.println("Enter integer:");
-		int i2 = in.nextInt();
+		int i2 = sc.nextInt();
 		System.out.println("Second integer = " + i2);
 
 		// System.out.println(((Object)operand).getClass().getName());
