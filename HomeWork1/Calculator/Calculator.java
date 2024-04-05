@@ -1,5 +1,37 @@
+import java.util.*;
+
 class Calculator {
 	public static void main(String [] args) {
-		System.out.println("hi");
+		Scanner in = new Scanner(System.in);
+
+		System.out.println("Enter operand:");
+		String operand = in.nextLine();
+		System.out.println("Operand = " + operand);
+
+		System.out.println("Enter integer:");
+		int i1 = in.nextInt();
+		System.out.println("First integer = " + i1);
+
+
+		System.out.println("Enter integer:");
+		int i2 = in.nextInt();
+		System.out.println("Second integer = " + i2);
+
+		// System.out.println(((Object)operand).getClass().getName());
+
+		switch (operand) {
+			case "+":
+				System.out.println("The result is " + (i1 + i2));
+				break;
+			case "-":
+				System.out.println("The result is " + (i1 - i2));
+				break;
+			case "*":
+				System.out.println("The result is " + (i1 * i2));
+				break;
+			case "/":
+				System.out.println("The result is " + (i1 / i2));
+				break;
+		}
 	}
 }
