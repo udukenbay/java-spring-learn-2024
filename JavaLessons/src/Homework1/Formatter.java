@@ -1,6 +1,8 @@
-import java.util.*;
+package Homework1;
 
-class Formatter {
+import java.util.Scanner;
+
+public class Formatter {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
