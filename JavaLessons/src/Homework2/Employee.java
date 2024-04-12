@@ -11,11 +11,13 @@ package Homework2;
 //Добавил в домашнее задание пункт с подсчётом просроченных
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Employee {
     private String name;
     private int id;
-    Task[] tasks = new Task[100];
+    List<Task> tasks = new ArrayList<>();
 
     public Employee(String name, int id) { // , String department, double salary
         this.name = name;
@@ -39,29 +41,33 @@ public class Employee {
     }
 
     void addTask(int id, String title, LocalDate deadline, String status) {
-        tasks[id] = new Task(id, title, deadline, status);
-        tasks[id].displayInfo();
+        Task task = new Task(id, title, deadline, status);
+        tasks.add(task);
     }
 
-    void setStatus(int i, String newStatus) {
-        tasks[i].setStatus(newStatus);
+    void setStatus(int id, String newStatus) {
+        for (Task t : tasks) {
+            if (id == t.getId()) {
+                t.setStatus(newStatus);
+            }
+        }
     }
 
-    void deadlineExpression(int i, LocalDate newDate) {
-        tasks[i].setDeadline(newDate);
+    void deadlineExpression(int id, LocalDate newDate) {
+        for (Task t : tasks) {
+            if (id == t.getId()) {
+                t.setDeadline(newDate);
+            }
+        }
     }
 
     void countExpiredTasks() {
         // метод для отображения просроченных задач работника countExpiredTasks() - сравнивать с текущем временем
         LocalDate currentDate = LocalDate.now();
 
-        for (int i = 0; i < tasks.length; i++) {
-            if (tasks[i] == null) {
-                break;
-            }
-
-            if (tasks[i].getDeadline().isBefore(currentDate) && tasks[i].getStatus().equals("NEW")) {
-                System.out.println("'" + tasks[i].getTitle() + "' is expired!");
+        for (Task t : tasks) {
+            if (t.getDeadline().isBefore(currentDate) && t.getStatus().equals("NEW")) {
+                System.out.println("'" + t.getTitle() + "' is expired!");
             }
         }
     }
@@ -76,11 +82,17 @@ public class Employee {
         emp1.addTask(2, "Send java home tasks", LocalDate.of(2024, 04, 12), "NEW");
         emp1.addTask(3, "Convert time-zone for all projects", LocalDate.of(2024, 04, 10), "NEW");
 
+        for (Task t : emp1.tasks) {
+            t.displayInfo();
+        }
+
         emp1.setStatus(1, "DONE");
-        System.out.println("The new status = " + emp1.tasks[1].getStatus() + " for '" + emp1.tasks[1].getTitle() + "'");
+        System.out.println("The new status = " + emp1.tasks.get(1).getStatus() + " for '" + emp1.tasks.get(1).getTitle() + "'");
+//        System.out.println("The new status = " + emp1.tasks[1].getStatus() + " for '" + emp1.tasks[1].getTitle() + "'");
 
         emp1.deadlineExpression(2, LocalDate.of(2024, 04, 15));
-        System.out.println("The new deadline = " + emp1.tasks[2].getDeadline() + " for '" + emp1.tasks[1].getTitle() + "'");
+        System.out.println("The new deadline = " + emp1.tasks.get(2).getDeadline() + " for '" + emp1.tasks.get(2).getTitle() + "'");
+//        System.out.println("The new deadline = " + emp1.tasks[2].getDeadline() + " for '" + emp1.tasks[1].getTitle() + "'");
 
         emp1.countExpiredTasks();
     }
