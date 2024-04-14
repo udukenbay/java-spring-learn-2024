@@ -17,6 +17,7 @@ import java.util.List;
 public class Employee {
     private String name;
     private int id;
+    private List<Task> tasks = new ArrayList<>();
 
     public List<Task> getTasks() {
         return tasks;
@@ -25,8 +26,6 @@ public class Employee {
     public void setTasks(List<Task> tasks) {
         this.tasks = tasks;
     }
-
-    private List<Task> tasks = new ArrayList<>();
 
     public Employee(String name, int id) { // , String department, double salary
         this.name = name;
