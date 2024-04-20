@@ -10,14 +10,32 @@ package Homework2;
 //
 //Добавил в домашнее задание пункт с подсчётом просроченных
 
+import Homework3.Bonus;
+import Homework3.Workable;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Employee {
+public abstract class Employee implements Workable, Bonus {
     private String name;
     private int id;
+    private double salary;
     private List<Task> tasks = new ArrayList<>();
+
+    public Employee(String name, int id, double salary) {
+        this.name = name;
+        this.id = id;
+        this.salary = salary;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
 
     public List<Task> getTasks() {
         return tasks;
@@ -25,11 +43,6 @@ public class Employee {
 
     public void setTasks(List<Task> tasks) {
         this.tasks = tasks;
-    }
-
-    public Employee(String name, int id) { // , String department, double salary
-        this.name = name;
-        this.id = id;
     }
 
     public String getName() {
@@ -48,8 +61,7 @@ public class Employee {
         this.id = id;
     }
 
-    public void addTask(int id, String title, LocalDate deadline, String status) {
-        Task task = new Task(id, title, deadline, status);
+    public void addTask(Task task) {
         tasks.add(task);
     }
 
@@ -57,6 +69,14 @@ public class Employee {
         for (Task t : tasks) {
             if (id == t.getId()) {
                 t.setStatus(newStatus);
+            }
+        }
+    }
+
+    public void setStatus(LocalDate date, String status) {
+        for (Task t : tasks) {
+            if (t.getDeadline().isBefore(date)) {
+                t.setStatus(status);
             }
         }
     }
