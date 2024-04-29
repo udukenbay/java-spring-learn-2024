@@ -100,7 +100,6 @@ public class Main {
         division3.addTeam(team5);
         division3.showTeamList();
 
-
         // set department
         Director director = new Director("Anton", 49000, 15000);
 
@@ -115,6 +114,7 @@ public class Main {
         // Team own method ex.
         team1.goToFaceToFace(); // Team свой собственный функционал
         team2.goToFaceToFace(); // Team свой собственный функционал
+        team5.goToFaceToFace();
         division1.goToTeamBuilding(); // Division свой собственный функционал
         division3.goToTeamBuilding(); // Division свой собственный функционал
         department.goToTeamBuildingWithDivision(); // Department свой собственный функционал
