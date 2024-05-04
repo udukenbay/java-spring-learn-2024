@@ -2,6 +2,10 @@ package Homework3;
 
 import Homework2.Employee;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Developer extends Employee {
     private String position;
 
@@ -36,5 +40,15 @@ public class Developer extends Employee {
             bonus = 0.3;
         }
         return bonus;
+    }
+
+    public String setCV() {
+        String s = null;
+        try(BufferedReader reader = new BufferedReader(new InputStreamReader((System.in)))) {
+            s = reader.readLine();
+         } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+        return s;
     }
 }

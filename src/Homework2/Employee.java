@@ -11,6 +11,7 @@ package Homework2;
 //Добавил в домашнее задание пункт с подсчётом просроченных
 
 import Homework3.Bonus;
+import Homework3.ValidationException;
 import Homework3.Workable;
 
 import java.time.LocalDate;
@@ -34,7 +35,19 @@ public abstract class Employee implements Workable, Bonus {
     }
 
     public void setSalary(double salary) {
-        this.salary = salary;
+        try {
+            if (salary <= 0d) {
+                throw new Exception("Salary should be greater than zero");
+            }
+
+            this.salary = salary;
+        } catch (ValidationException e) {
+            System.out.println("Validation exception");
+            System.out.println(e.getMessage());
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
     }
 
     public List<Task> getTasks() {
