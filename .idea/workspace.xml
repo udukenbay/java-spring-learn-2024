@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc3a8ac2-48f0-40fc-85e4-0edf7a3d99bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Homework3/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework3/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework2/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/urziya-project/Homework2/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework3/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/urziya-project/Homework3/Department.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework3/TeamLead.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/urziya-project/Homework3/TeamLead.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/urziya-project/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework3/TeamLead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework3/TeamLead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +28,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2fXdy6yEqJEFyowgAYHhuvdG3yL" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
