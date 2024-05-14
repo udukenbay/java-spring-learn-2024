@@ -43,7 +43,5 @@ public class Department {
     public void goToTeamBuildingWithDivision() {
         Random random = new Random();
         System.out.println("let's go to team building with division -> " + divisionList.get(random.nextInt(divisionList.size())).getHeadOfDivision().getDivisionName());
-        StringBuilder sb = new StringBuilder();
-        String s = new String();
     }
 }
