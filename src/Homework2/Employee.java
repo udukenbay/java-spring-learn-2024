@@ -37,7 +37,7 @@ public abstract class Employee implements Workable, Bonus {
     public void setSalary(double salary) {
         try {
             if (salary <= 0d) {
-                throw new Exception("Salary should be greater than zero");
+                throw new ValidationException("Salary should be greater than zero", "Please create case");
             }
 
             this.salary = salary;
