@@ -162,5 +162,11 @@ public class Main {
 
         head3.divisionReconstruction("Colm", "DevKids", 8500);
         System.out.println(head3.getName() + " " + head3.getDivisionName() + " " + head3.getSalary());
+
+        System.out.println("Please try to put cv with texting some text message ");
+        developer1.setCV();
+
+        // let's try to increase salary
+         teamLead1.increaseSalary(-0.2);
     }
 }

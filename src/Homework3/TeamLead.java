@@ -37,6 +37,9 @@ public class TeamLead extends Employee {
     }
 
     public double increaseSalary(double percentage) {
+        if (percentage <= 0d) {
+            throw new ValidationRuntimeException("Percentage for increasing salary must be more than 0", "Please contact with team " + this.getName());
+        }
         double newSalary = this.getSalary() * percentage;
         return newSalary;
     }
