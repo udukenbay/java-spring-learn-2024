@@ -1,7 +1,10 @@
 import Homework2.Task;
 import Homework3.*;
+import Homework6.*;
 
 import java.time.LocalDate;
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -163,10 +166,38 @@ public class Main {
         head3.divisionReconstruction("Colm", "DevKids", 8500);
         System.out.println(head3.getName() + " " + head3.getDivisionName() + " " + head3.getSalary());
 
-        System.out.println("Please try to put cv with texting some text message ");
-        developer1.setCV();
+        // System.out.println("Please try to put cv with texting some text message ");
+        // developer1.setCV();
 
         // let's try to increase salary
-         teamLead1.increaseSalary(-0.2);
+        // teamLead1.increaseSalary(-0.2);
+
+        // homework-6-collections --- 18.05.2024
+        System.out.println("Collections");
+        Store store = new Store();
+
+        PayOperation payOp1 = new PayOperation("123", 50.0);
+        PayOperation payOp2 = new PayOperation("456", 100.0);
+        PayOperation payOp3 = new PayOperation("789", 199.99);
+        store.addPayOperation(payOp1);
+        store.addPayOperation(payOp2);
+        store.addPayOperation(payOp3);
+
+        List<Product> electronics = Arrays.asList(new Product("Laptop", 999.99), new Product("Phone", 599.99));
+        List<Product> courses = Arrays.asList(new Product("JavaCourse-1", 50.0), new Product("SpringBoot-2", 40.0));
+        List<Product> groceries = Arrays.asList(new Product("Apple", 2.99), new Product("Milk", 1.99));
+        store.addProductList("Electronics", electronics);
+        store.addProductList("Courses", courses);
+        store.addProductList("Groceries", groceries);
+
+        System.out.println("Pay Operations:");
+        List<PayOperation> payOps = store.getPayOperationsAsList();
+        store.showPayOperations(payOps);
+
+        System.out.println("\nProducts in Courses");
+        store.showProductListsByCategory("Courses");
+        // call method which inside call method with HashMap
+        System.out.println("Let's call method with HashMap");
+        store.showAllProductsList();
     }
 }
