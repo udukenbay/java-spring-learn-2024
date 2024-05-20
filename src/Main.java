@@ -192,14 +192,12 @@ public class Main {
 
         System.out.println("Pay Operations:");
         List<PayOperation> payOps = store.getPayOperationsAsList();
-        for (PayOperation op: payOps) {
-            System.out.println(op.getTransactionId() + " - $" + op.getAmount());
-        }
+        store.showPayOperations(payOps);
 
         System.out.println("\nProducts in Courses");
-        List<Product> coursesProducts = store.getProductListByCategory("Courses");
-        for (Product product: coursesProducts) {
-            System.out.println(product.getName() + " - $"+product.getPrice());
-        }
+        store.showProductListsByCategory("Courses");
+        // call method which inside call method with HashMap
+        System.out.println("Let's call method with HashMap");
+        store.showAllProductsList();
     }
 }
