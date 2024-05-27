@@ -5,7 +5,7 @@ import java.util.List;
 
 // Создайте класс Bank<T>, который будет представлять банк и хранить список счетов (тип T)
 // Реализуйте методы для добавления нового счета, выполнения транзакций и получения информации о балансе счета
-public class Bank<T> {
+public class Bank<T extends Double> {
     private List<Account<T>> accountBalances;
 
     public Bank() {
