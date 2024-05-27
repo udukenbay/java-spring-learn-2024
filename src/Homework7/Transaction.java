@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 // Класс Transaction<T> должен содержать поля (with String id, <T> sourceAccount, <T> targetAccount, double amount) и реализовывать интерфейс Transactionable
 // Реализуйте конструктор, принимающий значения для всех полей
 // Создайте метод processTransaction(), который будет выполнять транзакцию между счетами
-public class Transaction<T> implements Transactionable<T> {
+public class Transaction<T extends Account> implements Transactionable<T> {
 
     private static Logger logger = Logger.getLogger(Main.class.getName());
 
