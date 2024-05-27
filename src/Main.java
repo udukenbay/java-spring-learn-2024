@@ -1,6 +1,9 @@
 import Homework2.Task;
 import Homework3.*;
 import Homework6.*;
+import Homework7.Bank;
+import Homework7.Account;
+import Homework7.Transaction;
 
 import java.time.LocalDate;
 import java.util.Arrays;
@@ -199,5 +202,31 @@ public class Main {
         // call method which inside call method with HashMap
         System.out.println("Let's call method with HashMap");
         store.showAllProductsList();
+
+        // homework-7-generics
+        Bank<Double> bank = new Bank<>();
+
+        Account<Double> account1 = new Account<>("acc-1", 1000.0);
+        Account<Double> account2 = new Account<>("acc-2", 2000.0);
+
+        bank.addNewAccountBalance(account1);
+        bank.addNewAccountBalance(account2);
+
+        Transaction<Account<Double>> transaction = new Transaction<>("1", account1, account2, 500.0);
+        bank.executeTransaction(transaction);
+
+        List<Account<Double>> balances = bank.getInfoAboutAccountBalances();
+        for (Account<Double> account: balances) {
+            System.out.println("Account " + account.getId() + " Balance: " + account.getBalance());
+        }
+
+        transaction.deposit(55.0);
+        transaction.withdraw(35.0);
+
+        Account<Double> account3 = new Account<>("acc-3", 1500.0);
+        Account<Double> account4 = new Account<>("acc-4", 2500.0);
+
+        Transaction<Account<Double>> transaction1 = new Transaction<>("2", account4, account3, 5000);
+        bank.executeTransaction(transaction1);
     }
 }
