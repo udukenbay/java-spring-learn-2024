@@ -1,0 +1,6 @@
+2024-05-31 12:00:00 - INFO - Application started
+2024-05-31 12:05:00 - ERROR - NullPointer Exception occurred in Module A
+2024-05-31 12:10:00 - INFO - User logged in
+2024-05-31 12:15:00 - ERROR - Database connection failed
+2024-06-01 12:20:00 - ERROR - Out of memory error in Module B
+2024-06-01 12:25:00 - INFO - Data processed successfully
