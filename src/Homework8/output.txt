@@ -1,0 +1,3 @@
+ERROR - NullPointer Exception occurred in Module A - 1 occurences
+ERROR - Out of memory error in Module B - 1 occurences
+ERROR - Database connection failed - 1 occurences
