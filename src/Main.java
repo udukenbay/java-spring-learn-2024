@@ -6,12 +6,10 @@
 //import Homework7.Transaction;
 //import Homework8.ContactsList;
 //import Homework8.LogAnalyzer;
-import Homework9.*;
+import Homework10.MathOperation;
+import Homework10.PredicateOperation;
+import Homework10.StringOperation;
 
-import java.io.IOException;
-import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -267,45 +265,63 @@ public class Main {
 //        contactsList.showContacts();
 
         // homework-9-threads
-        BankAccount bA = new BankAccount(1000);
+//        BankAccount bA = new BankAccount(1000);
+//
+//        Runnable depositTask = () -> {
+//            for (int i = 0; i < 5; i++) {
+//                bA.deposit(100);
+//            }
+//        };
+//
+//        Runnable withdrawTask = () -> {
+//            for (int i = 0; i < 3; i++) {
+//                bA.withdraw(500);
+//            }
+//        };
+//
+//        Thread t1 = new Thread(depositTask);
+//        Thread t2 = new Thread(withdrawTask);
+//
+//        t1.start();
+//        t2.start();
+//
+//        try {
+//            t1.join();
+//            t2.join();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//
+//        logger.log(Level.INFO, "Final Balance: " + bA.getBalance());
+//
+//        // second task
+//        ProducerConsumerSample pc = new ProducerConsumerSample();
+//
+//        // Creating multiple producer and consumer threads
+//        for (int i = 0; i < 2; i++) {
+//            new Thread(pc.producer).start();
+//        }
+//
+//        for (int i = 0; i < 3; i++) {
+//            new Thread(pc.consumer).start();
+//        }
+        // homework-10-lambda
+        StringOperation<String> stringOperation = x -> x.toUpperCase();
+        String upperResult = stringOperation.operate("tabulation");
+        logger.log(Level.INFO, "The result of string operation is " + upperResult);
 
-        Runnable depositTask = () -> {
-            for (int i = 0; i < 5; i++) {
-                bA.deposit(100);
+        MathOperation<Integer> mathOperation = (x, y) -> x + y;
+        int result = mathOperation.operate(10, 20);
+        logger.log(Level.INFO, "The result of math operation is " + result);
+
+        String cast = "olympiad";
+        PredicateOperation<Boolean, String> predicateOperation = x -> {
+            if (x.length() < 5) {
+                return true;
             }
+            return false;
         };
 
-        Runnable withdrawTask = () -> {
-            for (int i = 0; i < 3; i++) {
-                bA.withdraw(500);
-            }
-        };
-
-        Thread t1 = new Thread(depositTask);
-        Thread t2 = new Thread(withdrawTask);
-
-        t1.start();
-        t2.start();
-
-        try {
-            t1.join();
-            t2.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        logger.log(Level.INFO, "Final Balance: " + bA.getBalance());
-
-        // second task
-        ProducerConsumerSample pc = new ProducerConsumerSample();
-
-        // Creating multiple producer and consumer threads
-        for (int i = 0; i < 2; i++) {
-            new Thread(pc.producer).start();
-        }
-
-        for (int i = 0; i < 3; i++) {
-            new Thread(pc.consumer).start();
-        }
+        logger.log(Level.INFO, "The result of predicate operation is " + predicateOperation.operate(cast));
     }
 }
