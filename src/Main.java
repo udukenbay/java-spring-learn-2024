@@ -1,11 +1,12 @@
-import Homework2.Task;
-import Homework3.*;
-import Homework6.*;
-import Homework7.Bank;
-import Homework7.Account;
-import Homework7.Transaction;
-import Homework8.ContactsList;
-import Homework8.LogAnalyzer;
+//import Homework2.Task;
+//import Homework3.*;
+//import Homework6.*;
+//import Homework7.Bank;
+//import Homework7.Account;
+//import Homework7.Transaction;
+//import Homework8.ContactsList;
+//import Homework8.LogAnalyzer;
+import Homework9.*;
 
 import java.io.IOException;
 import java.time.LocalDate;
@@ -237,32 +238,74 @@ public class Main {
         Logger logger = Logger.getLogger(com.sun.tools.javac.Main.class.getName());
 
         // homework-8-file-IO-steam
-        LogAnalyzer analyzer = new LogAnalyzer("src/files/logFile.txt");
+//        LogAnalyzer analyzer = new LogAnalyzer("src/files/logFile.txt");
+//        try {
+//            List<String> allErrors = analyzer.getAllErrors();
+//            for (String errs: allErrors) {
+//                logger.log(Level.INFO, errs);
+//            }
+//
+//            System.out.println("With date errors");
+//            List<String> errorsByDate = analyzer.getErrorsByDate("2024-05-31");
+//            for (String errsByDate: errorsByDate) {
+//                logger.log(Level.SEVERE, errsByDate);
+//            }
+//
+//            analyzer.writeErrorStatisticsToFile("src/files/output.txt");
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//
+//        // contacts-app-implementation :)
+//        ContactsList contactsList = new ContactsList();
+//        contactsList.loadContactsFromFile("src/files/contacts.txt");
+//        contactsList.addContact("Rin Evans");
+//        contactsList.deleteContact("JhnD Doe");
+//        contactsList.deleteContact("Jane Smith");
+//        contactsList.editContact("Rin Evans", "Rin Smith");
+//        contactsList.saveContactsToFile("/contacts_updated.txt");
+//        contactsList.showContacts();
+
+        // homework-9-threads
+        BankAccount bA = new BankAccount(1000);
+
+        Runnable depositTask = () -> {
+            for (int i = 0; i < 5; i++) {
+                bA.deposit(100);
+            }
+        };
+
+        Runnable withdrawTask = () -> {
+            for (int i = 0; i < 3; i++) {
+                bA.withdraw(500);
+            }
+        };
+
+        Thread t1 = new Thread(depositTask);
+        Thread t2 = new Thread(withdrawTask);
+
+        t1.start();
+        t2.start();
+
         try {
-            List<String> allErrors = analyzer.getAllErrors();
-            for (String errs: allErrors) {
-                logger.log(Level.INFO, errs);
-            }
-
-            System.out.println("With date errors");
-            List<String> errorsByDate = analyzer.getErrorsByDate("2024-05-31");
-            for (String errsByDate: errorsByDate) {
-                logger.log(Level.SEVERE, errsByDate);
-            }
-
-            analyzer.writeErrorStatisticsToFile("src/files/output.txt");
-        } catch (IOException e) {
+            t1.join();
+            t2.join();
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-        // contacts-app-implementation :)
-        ContactsList contactsList = new ContactsList();
-        contactsList.loadContactsFromFile("src/files/contacts.txt");
-        contactsList.addContact("Rin Evans");
-        contactsList.deleteContact("JhnD Doe");
-        contactsList.deleteContact("Jane Smith");
-        contactsList.editContact("Rin Evans", "Rin Smith");
-        contactsList.saveContactsToFile("/contacts_updated.txt");
-        contactsList.showContacts();
+        logger.log(Level.INFO, "Final Balance: " + bA.getBalance());
+
+        // second task
+        ProducerConsumerSample pc = new ProducerConsumerSample();
+
+        // Creating multiple producer and consumer threads
+        for (int i = 0; i < 2; i++) {
+            new Thread(pc.producer).start();
+        }
+
+        for (int i = 0; i < 3; i++) {
+            new Thread(pc.consumer).start();
+        }
     }
 }
