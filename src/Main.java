@@ -8,10 +8,14 @@
 //import Homework8.LogAnalyzer;
 import Homework10.MathOperation;
 import Homework10.PredicateOperation;
+import Homework10.Product;
 import Homework10.StringOperation;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -323,5 +327,74 @@ public class Main {
         };
 
         logger.log(Level.INFO, "The result of predicate operation is " + predicateOperation.operate(cast));
+
+        // Stream API
+        List<Product> products = new ArrayList<>();
+        products.add(new Product(1, "Chicken", 45.0));
+        products.add(new Product(2, "Pizza", 55.0));
+        products.add(new Product(3, "Steak", 60.0));
+        products.add(new Product(4, "Cheese", 40.0));
+
+        // Filter products with price more than 50 dollars
+        List<Product> expensiveProducts = products.stream()
+                .filter(p -> p.getPrice() > 50)
+                .collect(Collectors.toList());
+
+        expensiveProducts.forEach(s-> System.out.println("Expensive products (more than 50 dollars):" + s.getName() + " $" + s.getPrice()));
+
+        // Filter products by name
+        List<Product> filteredByName = products.stream()
+                .filter(p -> p.getName().contains("A"))
+                .collect(Collectors.toList());
+
+        filteredByName.forEach(s -> System.out.println("Filtered by name: " + s.getName()));
+
+        // Filter products by price range
+        List<Product> priceRangeProducts = products.stream()
+                .filter(p -> p.getPrice() >= 40 && p.getPrice() <= 50)
+                .collect(Collectors.toList());
+
+        priceRangeProducts.forEach(s -> System.out.println("Products in price range from 40 to 50: " + s.getName() + " $" + s.getPrice()));
+
+        // Sort by price increase
+        List<Product> sortedByPriceIncrease = products.stream()
+                .sorted((p1, p2) -> Double.compare(p1.getPrice(), p2.getPrice()))
+                .collect(Collectors.toList());
+
+        logger.log(Level.INFO, "sortedByPriceIncrease");
+        sortedByPriceIncrease.forEach(s -> System.out.println("Sorted products list (increase): " + s.getName() + " $" + s.getPrice()));
+
+        // Sort by price decrease
+        List<Product> sortedByPriceDecrease = products.stream()
+                .sorted((p1, p2) -> Double.compare(p2.getPrice(), p1.getPrice()))
+                .collect(Collectors.toList());
+
+        logger.log(Level.INFO, "sortedByPriceDecrease");
+        sortedByPriceDecrease.forEach(s -> System.out.println("Sorted products list (decrease): " + s.getName() + " $" + s.getPrice()));
+
+        // Sort by name alphabetically
+        List<Product> sortedByName = products.stream()
+                .sorted((p1, p2) -> p1.getName().compareTo(p2.getName()))
+                .collect(Collectors.toList());
+
+        logger.log(Level.INFO, "sortedByName");
+        sortedByName.forEach(s -> System.out.println("Sort by name: " + s.getName()));
+
+        // Parallel stream for filtering and sorting
+        List<Product> expensiveProductsParallel = products.parallelStream()
+                .filter(p -> p.getPrice() > 50)
+                .collect(Collectors.toList());
+
+        logger.log(Level.INFO, "expensiveProductsParallel");
+        expensiveProductsParallel.forEach(s -> System.out.println("Parallel: " + s.getName()));
+
+
+        List<Product> sortedByPriceIncreaseParallel = products.parallelStream()
+                .sorted((p1, p2) -> Double.compare(p1.getPrice(), p2.getPrice()))
+                .collect(Collectors.toList());
+
+        logger.log(Level.INFO, "sortedByPriceIncreaseParallel");
+        sortedByPriceIncreaseParallel.forEach(s -> System.out.println("Parallel: " + s.getName()));
+
     }
 }

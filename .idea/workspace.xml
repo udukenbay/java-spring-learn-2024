@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc3a8ac2-48f0-40fc-85e4-0edf7a3d99bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Homework10/MathOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework10/PredicateOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework10/StringOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework10/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/urziya-project/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
