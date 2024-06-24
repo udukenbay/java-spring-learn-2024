@@ -6,10 +6,7 @@
 //import Homework7.Transaction;
 //import Homework8.ContactsList;
 //import Homework8.LogAnalyzer;
-import Homework10.MathOperation;
-import Homework10.PredicateOperation;
-import Homework10.Product;
-import Homework10.StringOperation;
+import Homework10.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -396,5 +393,14 @@ public class Main {
         logger.log(Level.INFO, "sortedByPriceIncreaseParallel");
         sortedByPriceIncreaseParallel.forEach(s -> System.out.println("Parallel: " + s.getName()));
 
+
+        // Annotations
+        logger.log(Level.INFO, "Annotations");
+        try {
+            TestCustomAnnotations testCustomAnnotations = new TestCustomAnnotations();
+            testCustomAnnotations.validate();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
     }
 }
