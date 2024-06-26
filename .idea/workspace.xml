@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc3a8ac2-48f0-40fc-85e4-0edf7a3d99bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Homework10/TestCustomAnnotations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework10/customAnnotations/Email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework10/customAnnotations/Max.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework10/customAnnotations/Min.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework10/customAnnotations/Money.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Homework10/customAnnotations/NotNull.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/urziya-project/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>

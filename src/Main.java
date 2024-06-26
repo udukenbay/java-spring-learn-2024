@@ -6,14 +6,13 @@
 //import Homework7.Transaction;
 //import Homework8.ContactsList;
 //import Homework8.LogAnalyzer;
-import Homework9.*;
+import Homework10.*;
 
-import java.io.IOException;
-import java.time.LocalDate;
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -267,45 +266,141 @@ public class Main {
 //        contactsList.showContacts();
 
         // homework-9-threads
-        BankAccount bA = new BankAccount(1000);
+//        BankAccount bA = new BankAccount(1000);
+//
+//        Runnable depositTask = () -> {
+//            for (int i = 0; i < 5; i++) {
+//                bA.deposit(100);
+//            }
+//        };
+//
+//        Runnable withdrawTask = () -> {
+//            for (int i = 0; i < 3; i++) {
+//                bA.withdraw(500);
+//            }
+//        };
+//
+//        Thread t1 = new Thread(depositTask);
+//        Thread t2 = new Thread(withdrawTask);
+//
+//        t1.start();
+//        t2.start();
+//
+//        try {
+//            t1.join();
+//            t2.join();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//
+//        logger.log(Level.INFO, "Final Balance: " + bA.getBalance());
+//
+//        // second task
+//        ProducerConsumerSample pc = new ProducerConsumerSample();
+//
+//        // Creating multiple producer and consumer threads
+//        for (int i = 0; i < 2; i++) {
+//            new Thread(pc.producer).start();
+//        }
+//
+//        for (int i = 0; i < 3; i++) {
+//            new Thread(pc.consumer).start();
+//        }
+        // homework-10-lambda
+        StringOperation<String> stringOperation = x -> x.toUpperCase();
+        String upperResult = stringOperation.operate("tabulation");
+        logger.log(Level.INFO, "The result of string operation is " + upperResult);
 
-        Runnable depositTask = () -> {
-            for (int i = 0; i < 5; i++) {
-                bA.deposit(100);
+        MathOperation<Integer> mathOperation = (x, y) -> x + y;
+        int result = mathOperation.operate(10, 20);
+        logger.log(Level.INFO, "The result of math operation is " + result);
+
+        String cast = "olympiad";
+        PredicateOperation<Boolean, String> predicateOperation = x -> {
+            if (x.length() < 5) {
+                return true;
             }
+            return false;
         };
 
-        Runnable withdrawTask = () -> {
-            for (int i = 0; i < 3; i++) {
-                bA.withdraw(500);
-            }
-        };
+        logger.log(Level.INFO, "The result of predicate operation is " + predicateOperation.operate(cast));
 
-        Thread t1 = new Thread(depositTask);
-        Thread t2 = new Thread(withdrawTask);
+        // Stream API
+        List<Product> products = new ArrayList<>();
+        products.add(new Product(1, "Chicken", 45.0));
+        products.add(new Product(2, "Pizza", 55.0));
+        products.add(new Product(3, "Steak", 60.0));
+        products.add(new Product(4, "Cheese", 40.0));
 
-        t1.start();
-        t2.start();
+        // Filter products with price more than 50 dollars
+        List<Product> expensiveProducts = products.stream()
+                .filter(p -> p.getPrice() > 50)
+                .collect(Collectors.toList());
 
+        expensiveProducts.forEach(s-> System.out.println("Expensive products (more than 50 dollars):" + s.getName() + " $" + s.getPrice()));
+
+        // Filter products by name
+        List<Product> filteredByName = products.stream()
+                .filter(p -> p.getName().contains("A"))
+                .collect(Collectors.toList());
+
+        filteredByName.forEach(s -> System.out.println("Filtered by name: " + s.getName()));
+
+        // Filter products by price range
+        List<Product> priceRangeProducts = products.stream()
+                .filter(p -> p.getPrice() >= 40 && p.getPrice() <= 50)
+                .collect(Collectors.toList());
+
+        priceRangeProducts.forEach(s -> System.out.println("Products in price range from 40 to 50: " + s.getName() + " $" + s.getPrice()));
+
+        // Sort by price increase
+        List<Product> sortedByPriceIncrease = products.stream()
+                .sorted((p1, p2) -> Double.compare(p1.getPrice(), p2.getPrice()))
+                .collect(Collectors.toList());
+
+        logger.log(Level.INFO, "sortedByPriceIncrease");
+        sortedByPriceIncrease.forEach(s -> System.out.println("Sorted products list (increase): " + s.getName() + " $" + s.getPrice()));
+
+        // Sort by price decrease
+        List<Product> sortedByPriceDecrease = products.stream()
+                .sorted((p1, p2) -> Double.compare(p2.getPrice(), p1.getPrice()))
+                .collect(Collectors.toList());
+
+        logger.log(Level.INFO, "sortedByPriceDecrease");
+        sortedByPriceDecrease.forEach(s -> System.out.println("Sorted products list (decrease): " + s.getName() + " $" + s.getPrice()));
+
+        // Sort by name alphabetically
+        List<Product> sortedByName = products.stream()
+                .sorted((p1, p2) -> p1.getName().compareTo(p2.getName()))
+                .collect(Collectors.toList());
+
+        logger.log(Level.INFO, "sortedByName");
+        sortedByName.forEach(s -> System.out.println("Sort by name: " + s.getName()));
+
+        // Parallel stream for filtering and sorting
+        List<Product> expensiveProductsParallel = products.parallelStream()
+                .filter(p -> p.getPrice() > 50)
+                .collect(Collectors.toList());
+
+        logger.log(Level.INFO, "expensiveProductsParallel");
+        expensiveProductsParallel.forEach(s -> System.out.println("Parallel: " + s.getName()));
+
+
+        List<Product> sortedByPriceIncreaseParallel = products.parallelStream()
+                .sorted((p1, p2) -> Double.compare(p1.getPrice(), p2.getPrice()))
+                .collect(Collectors.toList());
+
+        logger.log(Level.INFO, "sortedByPriceIncreaseParallel");
+        sortedByPriceIncreaseParallel.forEach(s -> System.out.println("Parallel: " + s.getName()));
+
+
+        // Annotations
+        logger.log(Level.INFO, "Annotations");
         try {
-            t1.join();
-            t2.join();
-        } catch (InterruptedException e) {
+            TestCustomAnnotations testCustomAnnotations = new TestCustomAnnotations();
+            testCustomAnnotations.validate();
+        } catch (IllegalAccessException e) {
             e.printStackTrace();
-        }
-
-        logger.log(Level.INFO, "Final Balance: " + bA.getBalance());
-
-        // second task
-        ProducerConsumerSample pc = new ProducerConsumerSample();
-
-        // Creating multiple producer and consumer threads
-        for (int i = 0; i < 2; i++) {
-            new Thread(pc.producer).start();
-        }
-
-        for (int i = 0; i < 3; i++) {
-            new Thread(pc.consumer).start();
         }
     }
 }
