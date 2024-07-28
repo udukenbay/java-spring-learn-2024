@@ -9,6 +9,4 @@ public class StringUtilsService {
   public String capitalize(String str) {
     return StringUtils.capitalize(str);
   }
-
-  // Другие методы StringUtils по необходимости
 }
