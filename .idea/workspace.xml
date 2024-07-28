@@ -1,16 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc3a8ac2-48f0-40fc-85e4-0edf7a3d99bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Homework10/TestCustomAnnotations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework10/customAnnotations/Email.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework10/customAnnotations/Max.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework10/customAnnotations/Min.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework10/customAnnotations/Money.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework10/customAnnotations/NotNull.java" afterDir="false" />
+    <list default="true" id="24536dba-95df-4737-b495-48c05fe57bf7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/urziya-project/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework1/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework1/Formatter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework1/HelloWorld.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework10/MathOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework10/PredicateOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework10/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework10/StringOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework10/TestCustomAnnotations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework10/customAnnotations/Email.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework10/customAnnotations/Max.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework10/customAnnotations/Min.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework10/customAnnotations/Money.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework10/customAnnotations/NotNull.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework2/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework2/Task$Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework2/Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework3/Bonus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework3/Department.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework3/Developer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework3/Director.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework3/Division.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework3/HeadOfDivision.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework3/Team.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework3/TeamLead.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework3/ValidationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework3/ValidationRuntimeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework3/Workable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework6/PayOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework6/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework6/Store.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework7/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework7/Bank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework7/Transaction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework7/Transactionable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework8/ContactsList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework8/LogAnalyzer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework8/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework9/BankAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Homework9/ProducerConsumerSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/META-INF/urziya-project.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/files/contacts.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/files/contacts_updated.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/files/logFile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/files/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework1/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework1/Formatter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework1/HelloWorld.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework10/MathOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework10/PredicateOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework10/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework10/StringOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework10/TestCustomAnnotations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework10/customAnnotations/Email.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework10/customAnnotations/Max.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework10/customAnnotations/Min.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework10/customAnnotations/Money.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework10/customAnnotations/NotNull.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework2/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework2/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework3/Bonus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework3/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework3/Developer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework3/Director.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework3/Division.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework3/HeadOfDivision.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework3/Team.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework3/TeamLead.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework3/ValidationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework3/ValidationRuntimeException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework3/Workable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework6/PayOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework6/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework6/Store.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework7/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework7/Bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework7/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework7/Transactionable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework8/ContactsList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework8/LogAnalyzer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework8/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework9/BankAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework9/ProducerConsumerSample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/contacts.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/contacts_updated.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/logFile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/urziya-project.iml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,31 +104,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="AnnotationType" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2fXdy6yEqJEFyowgAYHhuvdG3yL" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\projects\java-learn\urziya-project\src" />
-    </key>
-  </component>
+  <component name="ProjectId" id="2j30kr84Kqv4XaEH67aB9cNahO5" />
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -55,30 +120,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="urziya-project" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dc3a8ac2-48f0-40fc-85e4-0edf7a3d99bc" name="Default Changelist" comment="" />
-      <created>1713951607237</created>
+      <changelist id="24536dba-95df-4737-b495-48c05fe57bf7" name="Default Changelist" comment="" />
+      <created>1720600599344</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1713951607237</updated>
+      <updated>1720600599344</updated>
     </task>
     <servers />
   </component>
@@ -94,8 +145,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
