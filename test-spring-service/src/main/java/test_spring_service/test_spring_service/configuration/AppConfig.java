@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
 
   @Bean
-  public Map<String, Double> appParameters() {
+  public Map<String, Double> exchangeRate() {
     Map<String, Double> params = new HashMap<>();
     params.put("dollarRate", 75.0); // Пример курса доллара
     params.put("depositRate", 5.0); // Пример базовой ставки по депозиту
