@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5556/postgres
+    username: postgres
+    password: postgres
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /test-spring-service/v3/api-docs
+  swagger-ui:
+    enabled: true
+
+app:
+  security:
+    origins:
+      - http://localhost:8080

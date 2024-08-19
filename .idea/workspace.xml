@@ -1,48 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc3a8ac2-48f0-40fc-85e4-0edf7a3d99bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Homework10/TestCustomAnnotations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework10/customAnnotations/Email.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework10/customAnnotations/Max.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework10/customAnnotations/Min.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework10/customAnnotations/Money.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework10/customAnnotations/NotNull.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/urziya-project/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/urziya-project/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="24536dba-95df-4737-b495-48c05fe57bf7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="AnnotationType" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2fXdy6yEqJEFyowgAYHhuvdG3yL" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\projects\java-learn\urziya-project\src" />
-    </key>
-  </component>
+  <component name="ProjectId" id="2j30kr84Kqv4XaEH67aB9cNahO5" />
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -55,30 +24,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="urziya-project" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dc3a8ac2-48f0-40fc-85e4-0edf7a3d99bc" name="Default Changelist" comment="" />
-      <created>1713951607237</created>
+      <changelist id="24536dba-95df-4737-b495-48c05fe57bf7" name="Default Changelist" comment="" />
+      <created>1720600599344</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1713951607237</updated>
+      <updated>1720600599344</updated>
     </task>
     <servers />
   </component>
@@ -94,8 +49,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

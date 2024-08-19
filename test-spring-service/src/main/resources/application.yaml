@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: test-spring-service
+  profiles:
+    active: '@spring.profiles.active@'
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+server:
+  port: 8080
+
+# Metrics for k8s
+management:
+  endpoints:
+    web:
+      exposure:
+        include: metrics, prometheus, health, httpexchanges
+  httpexchanges:
+    recording:
+      enabled: true
+      include: request_headers, response_headers, time_taken, session_id, cookie_headers, authorization_header
