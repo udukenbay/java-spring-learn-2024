@@ -1,0 +1,5 @@
+com\spring_test_web\spring_test_web\services\PurchaseService.class
+com\spring_test_web\spring_test_web\SpringTestWebApplication.class
+com\spring_test_web\spring_test_web\configuration\JacksonConfig.class
+com\spring_test_web\spring_test_web\model\Purchase.class
+com\spring_test_web\spring_test_web\controller\PurchaseController.class

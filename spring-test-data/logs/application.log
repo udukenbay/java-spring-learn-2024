@@ -1,0 +1,62 @@
+2024-09-09T09:54:04.980+05:00  INFO 24152 --- [spring-test-data] [main] c.e.s.SpringTestDataApplication          : Starting SpringTestDataApplication using Java 21.0.3 with PID 24152 (C:\projects\java-learn\urziya-project\spring-test-data\target\classes started by dukenbay_49777 in C:\projects\java-learn\urziya-project\spring-test-data)
+2024-09-09T09:54:04.981+05:00  INFO 24152 --- [spring-test-data] [main] c.e.s.SpringTestDataApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-09-09T09:54:05.487+05:00  INFO 24152 --- [spring-test-data] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-09T09:54:05.504+05:00  INFO 24152 --- [spring-test-data] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2024-09-09T09:54:05.936+05:00  INFO 24152 --- [spring-test-data] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-09-09T09:54:05.948+05:00  INFO 24152 --- [spring-test-data] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-09T09:54:05.948+05:00  INFO 24152 --- [spring-test-data] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-09T09:54:06.002+05:00  INFO 24152 --- [spring-test-data] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-09T09:54:06.003+05:00  INFO 24152 --- [spring-test-data] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 988 ms
+2024-09-09T09:54:06.104+05:00  INFO 24152 --- [spring-test-data] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-09T09:54:06.275+05:00  INFO 24152 --- [spring-test-data] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:7b51aa66-ad7e-4624-a27d-14e070ac6430 user=SA
+2024-09-09T09:54:06.276+05:00  INFO 24152 --- [spring-test-data] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-09T09:54:06.310+05:00  INFO 24152 --- [spring-test-data] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-09T09:54:06.356+05:00  INFO 24152 --- [spring-test-data] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-09T09:54:06.383+05:00  INFO 24152 --- [spring-test-data] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-09T09:54:06.635+05:00  INFO 24152 --- [spring-test-data] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-09T09:54:06.965+05:00  INFO 24152 --- [spring-test-data] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-09T09:54:06.970+05:00  INFO 24152 --- [spring-test-data] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09T09:54:07.014+05:00  WARN 24152 --- [spring-test-data] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-09T09:54:07.299+05:00  WARN 24152 --- [spring-test-data] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a5efe30b-095b-4954-a0b2-f4801d4ffe35
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-09T09:54:07.316+05:00  INFO 24152 --- [spring-test-data] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-09T09:54:07.444+05:00  INFO 24152 --- [spring-test-data] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2024-09-09T09:54:07.450+05:00  INFO 24152 --- [spring-test-data] [main] c.e.s.SpringTestDataApplication          : Started SpringTestDataApplication in 2.821 seconds (process running for 3.438)
+2024-09-09T11:14:55.731+05:00  INFO 24152 --- [spring-test-data] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09T11:14:55.759+05:00  INFO 24152 --- [spring-test-data] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-09T11:14:55.768+05:00  INFO 24152 --- [spring-test-data] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-09T11:15:00.819+05:00  INFO 26196 --- [spring-test-data] [main] c.e.s.SpringTestDataApplication          : Starting SpringTestDataApplication using Java 21.0.3 with PID 26196 (C:\projects\java-learn\urziya-project\spring-test-data\target\classes started by dukenbay_49777 in C:\projects\java-learn\urziya-project\spring-test-data)
+2024-09-09T11:15:00.821+05:00  INFO 26196 --- [spring-test-data] [main] c.e.s.SpringTestDataApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-09-09T11:15:01.364+05:00  INFO 26196 --- [spring-test-data] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-09T11:15:01.381+05:00  INFO 26196 --- [spring-test-data] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2024-09-09T11:15:01.839+05:00  INFO 26196 --- [spring-test-data] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-09-09T11:15:01.852+05:00  INFO 26196 --- [spring-test-data] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-09T11:15:01.852+05:00  INFO 26196 --- [spring-test-data] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-09T11:15:01.912+05:00  INFO 26196 --- [spring-test-data] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-09T11:15:01.912+05:00  INFO 26196 --- [spring-test-data] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1052 ms
+2024-09-09T11:15:02.012+05:00  INFO 26196 --- [spring-test-data] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-09T11:15:02.211+05:00  INFO 26196 --- [spring-test-data] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:d89c97e2-6aa0-473f-88ae-788127a49652 user=SA
+2024-09-09T11:15:02.213+05:00  INFO 26196 --- [spring-test-data] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-09T11:15:02.259+05:00  INFO 26196 --- [spring-test-data] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-09T11:15:02.321+05:00  INFO 26196 --- [spring-test-data] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-09T11:15:02.352+05:00  INFO 26196 --- [spring-test-data] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-09T11:15:02.672+05:00  INFO 26196 --- [spring-test-data] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-09T11:15:03.050+05:00  INFO 26196 --- [spring-test-data] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-09T11:15:03.055+05:00  INFO 26196 --- [spring-test-data] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09T11:15:03.098+05:00  WARN 26196 --- [spring-test-data] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-09T11:15:03.394+05:00  WARN 26196 --- [spring-test-data] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: cce70798-9a91-4579-9bf7-1b65d9cba691
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-09T11:15:03.412+05:00  INFO 26196 --- [spring-test-data] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-09T11:15:03.541+05:00  INFO 26196 --- [spring-test-data] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2024-09-09T11:15:03.546+05:00  INFO 26196 --- [spring-test-data] [main] c.e.s.SpringTestDataApplication          : Started SpringTestDataApplication in 3.105 seconds (process running for 3.74)
+2024-09-09T11:21:22.378+05:00  INFO 26196 --- [spring-test-data] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09T11:21:22.380+05:00  INFO 26196 --- [spring-test-data] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-09T11:21:22.381+05:00  INFO 26196 --- [spring-test-data] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
