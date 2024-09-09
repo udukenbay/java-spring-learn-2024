@@ -1,31 +1,25 @@
 package com.spring_test_web.spring_test_web.services;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.spring_test_web.spring_test_web.model.Purchase;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
+@RequiredArgsConstructor
 public class PurchaseService {
 
   @Value("${file.storage.path}")
   private String baseDir;
 
   private final ObjectMapper objectMapper;
-
-  public PurchaseService() {
-    this.objectMapper = new ObjectMapper();
-    this.objectMapper.registerModule(new JavaTimeModule());
-    this.objectMapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
-  }
 
   public void savePurchase(String filename, Purchase purchase) throws IOException {
     File file = new File(baseDir + filename + ".json");
