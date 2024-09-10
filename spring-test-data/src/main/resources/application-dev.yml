@@ -12,3 +12,18 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     defer-datasource-initialization: true
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /spring-test-data/v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /spring-test-data/swagger-ui.html
+
+app:
+  security:
+    origins:
+      - http://localhost:8087
+      - http://localhost:5174
+      - http://10.28.122.11:8087

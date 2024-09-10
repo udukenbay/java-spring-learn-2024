@@ -3,6 +3,8 @@ spring:
     name: spring-test-data
   profiles:
     active: '@spring.profiles.active@'
+  web:
+    locale-resolver: accept_header
 
 server:
   port: 8087
