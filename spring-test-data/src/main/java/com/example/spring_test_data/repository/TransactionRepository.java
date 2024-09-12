@@ -5,9 +5,12 @@ import com.example.spring_test_data.model.TransactionType;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface TransactionRepository extends CrudRepository<Transaction, Long> {
+public interface TransactionRepository extends JpaRepository<Transaction, Long> {
+
   List<Transaction> findByTimestampBetween(LocalDateTime start, LocalDateTime end);
-  List<Transaction> findByTransactionTypeAndAmount(TransactionType transactionType, BigDecimal amount);
+
+  List<Transaction> findByTransactionTypeAndAmount(TransactionType transactionType,
+      BigDecimal amount);
 }
